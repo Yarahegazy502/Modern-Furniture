@@ -1,0 +1,494 @@
+/*fonts
+===========================*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Fira+Sans:wght@300;400;500;600;700;800&family=Josefin+Sans:wght@300;400;500;600;700&family=Kalam:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+/*body
+===========================*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #252829;
+}
+/* Colors
+==========================*/
+:root{
+    --mainColor:#1F1A16;
+    --secondColor:#CCCCCC;
+    --gray:#F8F8F8 ;
+    --red:#F73838;
+    --white:#ffffff
+}
+/* Links
+==========================*/
+a, a:hover, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+input:focus,
+button:focus {
+outline: none;
+}
+
+/*Lists
+==========================*/
+ul {
+list-style: none;
+}
+
+/*classes
+==========================*/
+.containe{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+
+
+/* firstHeader
+==========================*/
+.firstHeader{
+    background-color: var(--mainColor);
+    color: var(--white);
+    padding: 7px 0;
+}
+.firstHeader .firstHeaderIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstHeader .firstHeaderIcon .socialIconOFHeader,
+.firstHeader .firstHeaderIcon .searchMenuIconOFHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 100px; 
+}
+.firstHeader .firstHeaderIcon .searchMenuIconOFHeader{
+    width: 60px;
+}
+
+/* navbar
+==========================*/
+.navbar{
+    background-color: var(--gray);
+}
+.navbar .navbarItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .navbarItems .navbarLogo img{
+    width: 100%;
+    cursor: pointer;
+}
+.navbar .navbarItems .navbarLinks{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.navbar .navbarItems .navbarLinks ul{
+    display: flex;
+    margin-top: 15px;
+}
+.navbar .navbarItems .navbarLinks ul li{
+    margin: 0 15px;
+}
+.navbar .navbarItems .navbarLinks ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.navbar .navbarItems .navbarIcons{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.navbar .navbarItems .navbarIcons .navbarCartIcon,
+.navbar .navbarItems .navbarIcons .navbarHeartIcon{
+    border: .5px solid #777;
+    padding:5px 10px;
+    position: relative;
+}
+.navbar .navbarItems .navbarIcons .navbarCartIcon i,
+.navbar .navbarItems .navbarIcons .navbarHeartIcon i{
+    cursor: pointer;
+}
+.navbar .navbarItems .navbarIcons .navbarCounterOfIcons{
+    border: 0.5px solid #777;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(10px,-25px);
+    cursor: pointer;
+}
+/* carsoul
+==========================*/
+.carsoul .carsoulContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.carsoul .carsoulContent .carsoulCaption{
+    width: 20vw;
+    background-color: rgba(255, 255, 255,.7);
+    position:relative;
+    right: -60px;
+    z-index: 1;
+    padding: 20px 44px 20px 20px;
+}
+.carsoul .carsoulContent .carsoulSliders{
+    width: 80vw;
+}
+.carsoul .carsoulContent .carsoulSliders img{
+    width: 100%;
+    height: 80vh;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon  {
+    background-image: none;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--secondColor);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    z-index: 2;
+    position: absolute;
+    color: var(--mainColor);
+}
+
+
+.carousel-control-next {
+    right: 100%;
+}
+.carousel-control-prev {
+    left: -260px;
+}
+
+
+.carousel-indicators li {
+    width: 15px;
+    height:15px;
+    margin-left:7px ;
+    margin-right:7px ;
+    border-radius: 50%;
+}
+/* modernFurnitureSection
+==========================*/
+.modernFurnitureSection{
+    margin-top: 60px;
+}
+.modernFurnitureSection img{
+    width: 100%;
+}
+.modernFurnitureSection .modernFurnitureParts{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 15px;
+    
+}
+.modernFurnitureSection .modernFurnitureParts .modernFurniturePart1 .modernFurnitureTitle{
+    font-size: 2.2vw;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    position: relative;
+}
+.modernFurnitureSection .modernFurnitureParts .modernFurniturePart1 .modernFurnitureTitle::before{
+    content: "";
+    width: 13vw;
+    height: .5vh;
+    background-color: var(--secondColor);
+    position: absolute;
+    bottom:-5px;
+}
+.modernFurnitureSection .modernFurnitureParts .modernFurniturePart2 .modernFurnitureImgs2,
+.modernFurnitureSection .modernFurnitureParts .modernFurniturePart3 .modernFurnitureImgs3{
+    display: grid;
+    grid-row-gap: 15px;
+}
+
+/* tabs
+==========================*/
+.tabss{
+        margin-top: 60px ;
+}
+.tabss .tabsParts{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.tabss .tabsParts .tabsContentOfEachTab .contentOfTab1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:15px ;
+    grid-row-gap:15px ;
+}
+.tabss .tabsParts .tabsContentOfEachTab .contentOfTab1 img{
+    width: 100%;
+}
+.tabss .tabsParts .tabsLinks .nav {
+    margin: 0px 20px 20px 0;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--mainColor);
+    background-color: var(--gray);
+    text-align: center;
+    border: 1px solid var(--gray);
+}
+.tabss .tabsParts .tabsLinks .nav-pills .nav-link {
+    margin: 0px 10px 20px 0;
+    text-align: center;
+    border: 2px solid var(--gray);
+}
+
+/* discount
+==========================*/
+.discountSection{
+    background-color: var(--gray);
+    margin: 60px 0;
+    width: 100%;
+}
+.discountSection .discountParts{
+    display: grid;
+    grid-template-columns: 4fr 3fr 5fr;
+}
+.discountSection .discountParts img{
+    width: 100%;
+}
+.discountSection .discountParts .discountOfChair{
+    position: relative;
+}
+.discountSection .discountParts .discountOfChair .discount30{
+    top: 10%;
+    left: 20%;
+}
+.discountSection .discountParts .discountOfChair .discount30,
+.discountSection .discountParts .discountOfSofa .discount40{
+    background-color: var(--red);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    line-height: 0;
+    color: var(--white);
+    padding-top: 12px;
+    position: absolute;
+    
+}
+.discountSection .discountParts .discountTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.discountSection .discountParts .discountTitle h3{
+    font-size: 60px;
+    margin: 20px 0;
+    font-family: Lucida Handwriting;
+}
+.discountSection .discountParts .discountTitle button{
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 1px solid var(--mainColor);
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.discountSection .discountParts .discountOfSofa{
+    position: relative;
+}
+.discountSection .discountParts .discountOfSofa .discount40{
+    top: 30%;
+    right: 0%;
+}
+
+/* blog
+==========================*/
+.blog .blogContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+}
+.blog h2{
+    margin: 20px 0;
+}
+.blog .blogContent .blogContentOfroom .roomImg img{
+    width: 100%;
+    border-radius: 8px;
+}
+.blog .blogContent .blogContentOfroom .roomInfo{
+    padding: 15px 40px 15px 0;
+}
+.blog .blogContent .blogContentOfroom .roomInfo button{
+    background-color: transparent;
+    border: 1px solid #707070;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.blog .blogContent .blogContentOfroom .roomInfo button .blogIcon{
+    margin-left: 10px;
+}
+
+/* product
+==========================*/
+.product .productParts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+}
+.product h2{
+    margin: 50px 0 ;
+}
+.product .productParts .productPartsContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    border: 1px solid var(--secondColor);
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.product .productParts .productPartsContent .productImg img{
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.product .productParts .productPartsContent .productContentInfo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.product .productParts .productPartsContent .productContentInfo .productPharagraph{
+    padding-right: 20px;
+}
+.product .productParts .productPartsContent .productContentInfo .productStarIcons{
+    margin-bottom: 10px;
+}
+.product .productParts .productPartsContent .productContentInfo .productHeartCartIcon{
+    display: flex;
+}
+.product .productParts .productPartsContent .productContentInfo .productHeartCartIcon .productCartIcon,
+.product .productParts .productPartsContent .productContentInfo .productHeartCartIcon .productHeartIcon{
+    border: .5px solid #777;
+    padding:5px 10px;
+    margin-right: 10px;
+}
+
+/* brands
+==========================*/
+.brand{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 60px 0;
+}
+/* .brand div img:hover{
+    filter: grayscale(1);
+} */
+
+/* subscribe
+==========================*/
+.subscribe{
+    background-image: url('/src/Styles/Imgs/nn.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #F73838;
+    padding: 150px 0;
+    height: 400px;
+    position: relative;
+}
+.subscribe .subscribeOverlay{
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 150px 0;
+}
+.subscribe .subscribeOverlay .subscribeContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.subscribe .subscribeOverlay .subscribeContent .subscribeInfo p{
+    font-size: 16px;
+    margin-right: 30px;
+    color: var(--secondColor);
+
+}
+.subscribe .subscribeOverlay .subscribeContent .subscribeInput{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-column-gap: 15px;
+    margin-left: 15px;
+    align-items: center;
+}
+.subscribe .subscribeOverlay .subscribeContent .subscribeInput div input,
+.subscribe .subscribeOverlay .subscribeContent .subscribeInput div button{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 10px;
+    color: var(--white);
+}
+.subscribe .subscribeOverlay .subscribeContent .subscribeInput div button{
+    border: 1px solid var(--white);
+    padding-top: 10px;
+}
+.footer{
+    background-color: var(--mainColor);
+    color: var(--white);
+    padding: 60px 0 30px 0;
+}
+.footer .footerParts{
+    display: grid;
+    grid-template-columns: 5fr 3fr 4fr;
+    grid-column-gap: 10px;
+}
+.footer .footerParts .footerModern{}
+.footer .footerParts .footerModern .footerTitle{}
+.footer .footerParts .footerModern .footerImages,
+.footer .footerParts .footerPayments{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+}
+.footer .footerParts .footerModern .footerImages img
+{
+    width: 100px;
+}
+.footer .footerParts .footerPayments{
+    margin-top: 30px;
+}
+.footer .footerParts .footerPayments img{
+    width: 80px;
+}
+.footer .copyRight{
+    text-align: center;
+    padding: 40px 0 10px 0;
+    font-size: 17px;
+    
+}
+

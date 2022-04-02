@@ -1,0 +1,77 @@
+@media (max-width: 1199px) {
+    .navbar .navbarItems .navbarLogo img{
+        width: 100%;
+        /* transform: translateX(-58px); */
+        cursor: pointer;
+    }
+    .navbar .navbarItems .navbarIcons{
+        /* width: 10vw; */
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 991px) {
+ 
+}
+@media (max-width: 768px) {
+   
+    .navbar .navbarItems .navbarLinks{
+        display: none;
+    }
+    .discountSection .discountParts .discountTitle h2{
+        font-size: 27px;
+    }
+    .discountSection .discountParts .discountTitle h3{
+        font-size: 47px;
+        margin: 15px 0;
+        font-family: Lucida Handwriting;
+    }
+    .discountSection .discountParts .discountTitle button{
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    .product .productParts{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-column-gap: 15px;
+    }
+   
+    
+}
+@media (max-width: 565px) {
+    .modernFurnitureSection .modernFurnitureParts{
+        grid-template-columns:1fr;
+        grid-row-gap: 15px;
+        
+    }
+    .tabss .tabsParts{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .tabss .tabsParts .tabsLinks .nav{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    }
+    .tabss .tabsParts .tabsLinks .nav-pills .nav-link {
+        margin: 0px 10px 20px 10px;
+    }
+
+    .discountSection .discountParts{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .product .productParts .productPartsContent{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-column-gap: 10px;
+    }
+   
+}
+@media (max-width: 350px) {
+  
+}
+
+/*# sourceMappingURL=media.css.map */
